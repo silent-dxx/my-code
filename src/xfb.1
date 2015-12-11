@@ -1,0 +1,72 @@
+.\"表示:行首注释  而\":表示在行中的注释
+.\":create命令程序手册页的实例
+.TH CREATE 1 "2012-06-28" "create 1.01" "User Commands"
+.\"CREATE:表示标题
+.\"1:表示此命令出现在手册页的第几部分,范围为1-8的数字,和定义这个文件名小数点后的数字一致
+.\""2012-06-28":表示"2012-06-28"显示在整个页的下中
+.\""create 1.01":表示"create 1.01"显示在整个页的左下
+.\""User Commands":表示"User Commands"显示在整个页的上中
+.\".TH在文件的开始,主要说明标题
+.SH NAME
+.\"说明名称
+.\".SH从行首开始,靠左边,宽体
+\fBcreate\fR \- A simple demonstration application creates a file that head file or c file .
+.\"-:表示为\-
+.SH SYNOPSIS
+.\"说明语法格式
+.B create
+.\".B:表示宽体,如果本行没有文字,则.B标签的下一行为宽体
+\-OPTION... FILE...
+.SH DESCRIPTION
+.\"说明本命令或程序等的相关描述
+This manual page document is from Sunrier . \fBcreate\fR is a common application for create a new file that .c or .h file .
+.\"\fB文字\fR:表示将该文字设置成宽体
+.\"\fI文字\fR:表示将文字加下划线
+.\".:表示为\&.
+.SH OPTIONS
+.\"说明参数选项设置
+It will decide to create a .h file or .c file 
+.sp
+.\".sp:表示空行
+.B \-h
+It will create a new head file 
+.sp
+.B \-c
+It will create a new c file
+.sp
+.B \-\-help
+display this help and exit
+.sp
+.B \-\-version
+output version information and exit
+.SH COPYRIGHT
+.\":版权声明
+\fBcreate\fR is Copyright Sunrier .This program is free  software ,you can redistribute it or modify it under the GNU General Public License as published by the free software foundation .
+.SH SEE ALSO
+.\":其他参考
+This program is a template of c and h files to quickly create .
+.SH REPORTING BUGS
+.\":漏洞说明
+.TP 0
+.\".TP n:表示TP标签下的第2行开始缩进n个字符(在第1行超过n字符的前提下)　n默认值为7
+.\".TP 0:表示Report bugs to <sunrier@gmail.com> .这一句缩进0个字符,这句即为了实现换行的作用
+There probably are some,but I don't know that what they are yet.
+Report bugs to <sunrier@gmail.com> .
+.SH AUTHOR
+.\":文档编写作者
+Written by Sunrier .
+
+.\"看显示创建man手册命令的结果groff -Tascii -man create.1(注:此时不会创建任务文件,只是看下显示效果)
+.\"gzip create.1 把create.1压缩成.gz 文件,会创建一个create.1.gz的文件,而create.1文件会在gzip执行完后删除
+.\"如果想保留原文件可以这样用:gzip -c create.1 > create.1.gz
+.\"把文件create.1.gz放到/usr/share/man/man1下就可以完成create命令的man手册了
+.\"当执行man create后还会在在/var/cache/man/cat1/create.1.bz2创建一个create.1.bz2压缩文件
+
+
+
+
+
+
+
+
+
